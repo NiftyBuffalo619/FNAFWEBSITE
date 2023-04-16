@@ -1,0 +1,12 @@
+---
+export interface Props {
+	task: string;
+    taskname: string;
+}
+const { task , taskname } = Astro.props;
+---
+
+<div class="bg-slate-400">
+    <h3>{taskname}</h3>
+    <p>{task}</p>
+</div>
